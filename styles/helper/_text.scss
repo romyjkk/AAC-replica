@@ -1,0 +1,147 @@
+@import "variables";
+@import "mixins";
+
+p {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, a {
+  //text-transform: uppercase;
+}
+
+// header
+
+header {
+  nav {
+    ul.top-menu {
+      li {
+        p, a {
+          //@include font(1.4rem, 200, 2.8rem, $primarytextcolor);
+        }
+
+        a {
+          transition: .5s;
+          text-decoration: underline;
+
+          &:hover {
+            color: $textgray;
+          }
+
+          &:active {
+            color: $secondarytextcolor;
+          }
+        }
+
+        &.translate {
+          p {
+            @include font(1.4rem, 200, 2.8rem, $secondarytextcolor);
+
+            abbr {
+              //@include font(1.4rem, 200, 2.8rem, $primarytextcolor);
+              text-decoration: none;
+              cursor: pointer;
+              transition: .5s;
+
+              &:first-of-type {
+                padding-right: .5rem;
+                transition: .5s;
+
+                &:hover {
+                  color: $textgray;
+                }
+              }
+
+              &:last-of-type {
+                color: $textgray;
+                padding-left: .5rem;
+                transition: .5s;
+
+                &:hover {
+                  color: $primarytextcolor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    ul.main-menu, ul.submenu {
+      li a {
+        //@include font(1.6rem, 200, 2.8rem, $secondarytextcolor);
+      }
+    }
+
+    ul.main-menu {
+      li {
+        a {
+          transition: .5s;
+          &:hover {
+            color: $primarytextcolor;
+          }
+          &:active {
+            color: $textgray;
+          }
+        }
+      }
+    }
+  }
+}
+
+// main
+
+// slider
+
+//.slide {
+//  .slide-img {
+//    figure {
+//      h2 {
+//        @include font(5.1rem, 400, 2.8rem, $tertiarytextcolor);
+//      }
+//    }
+//  }
+//}
+
+// navigeren naar
+
+.cta-blocks {
+  .container {
+    .row {
+      .col-12 {
+        .cta-block {
+          h2 {
+            @include font(3.2rem, 200, 2.8rem, $secondarytextcolor);
+            text-align: center;
+            margin: 2rem 0 2rem 0;
+          }
+
+          .content {
+            ul {
+              li {
+                p {
+                  @include font(1.4rem, 200, 2rem, $textgray);
+                }
+              }
+            }
+          }
+
+          .bottom-border {
+            .border-container {
+              a {
+                transition: .5s;
+
+                p {
+                  @include font(2rem, 200, 2.8rem, $tertiarytextcolor);
+                }
+
+                &:hover {
+                  text-decoration: underline $tertiarytextcolor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

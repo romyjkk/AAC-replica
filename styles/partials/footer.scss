@@ -1,0 +1,108 @@
+@import "../helper/mixins";
+@import "../helper/variables";
+@import "../helper/text";
+
+footer {
+  display:flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  article {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 15%;
+    margin-bottom: 3rem;
+    p {
+      @include font(1.4rem, 200, auto, $primarytextcolor);
+      align-self: center;
+      margin-right: .5rem;
+    }
+    ul {
+      @include share();
+
+      li + li::before {
+        content: '+';
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        align-self: center;
+      }
+
+      li {
+        display: flex;
+        flex-direction: row;
+        border-right: none;
+        padding: 0;
+        a {
+          transition: .5s;
+          img {
+            transition: .5s;
+            @include share-img();
+          }
+          &:hover img {
+            transform: scale(1.2);
+            opacity: 0.7;
+          }
+
+          &:active img {
+            transform: scale(0.8);
+          }
+        }
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primarytextcolor;
+    margin: 2rem 0 0 0;
+    ul {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 3rem 0 3rem 0;
+      li {
+        padding: 0 1rem 0 1rem;
+        border-right: .1rem solid $primaryelementcolor;
+        a, p {
+          @include font(1.4rem, 200, 2.1rem, $tertiarytextcolor);
+        }
+
+        a {
+          text-decoration: underline;
+          transition: .5s;
+
+          &:hover {
+            transform: scale(2);
+            color: $secondarytextcolor;
+          }
+
+          &:active {
+            color: $textgray;
+          }
+        }
+
+        &:last-of-type {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-lg){
+  footer {
+    margin-top: 5rem;
+    nav {
+      ul {
+        li {
+          p, a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

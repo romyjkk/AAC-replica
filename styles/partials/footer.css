@@ -1,0 +1,105 @@
+p {
+  margin-bottom: 0;
+}
+
+header nav ul.top-menu li p, header nav ul.top-menu li a {
+  font-family: "Mr Jones", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 2.8rem;
+  color: #000000;
+}
+header nav ul.top-menu li a {
+  transition: 0.5s;
+  text-decoration: underline;
+}
+header nav ul.top-menu li a:hover {
+  color: #989898;
+}
+header nav ul.top-menu li a:active {
+  color: #E30917;
+}
+header nav ul.top-menu li:nth-of-type(4) p {
+  font-family: "Mr Jones", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 2.8rem;
+  color: #E30917;
+}
+header nav ul.top-menu li:nth-of-type(4) p abbr {
+  font-family: "Mr Jones", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 2.8rem;
+  color: #000000;
+  text-decoration: none;
+}
+header nav ul.top-menu li:nth-of-type(4) p abbr:first-of-type {
+  padding-right: 0.5rem;
+}
+header nav ul.top-menu li:nth-of-type(4) p abbr:last-of-type {
+  color: #989898;
+  padding-left: 0.5rem;
+}
+header nav ul.main-menu li a, header nav ul#hamburger-menu li a {
+  font-family: "Mr Jones", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2.8rem;
+  color: #E30917;
+}
+header nav ul.main-menu li a {
+  transition: 0.5s;
+}
+header nav ul.main-menu li a:hover {
+  color: #000000;
+}
+header nav ul.main-menu li a:active {
+  color: #989898;
+}
+
+.cta-blocks .container .row .col .cta-block h2 {
+  font-family: "Mr Jones", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 200;
+  line-height: 2.8rem;
+  color: #E30917;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+}
+.cta-blocks .container .row .col .cta-block .content ul li p {
+  font-family: "Mr Jones", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 2rem;
+  color: #989898;
+}
+.cta-blocks .container .row .col .cta-block .bottom-border .border-container a {
+  transition: 0.5s;
+}
+.cta-blocks .container .row .col .cta-block .bottom-border .border-container a p {
+  font-family: "Mr Jones", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 2.8rem;
+  color: #FFFFFF;
+}
+.cta-blocks .container .row .col .cta-block .bottom-border .border-container a:hover {
+  text-decoration: underline #FFFFFF;
+}
+
+footer {
+  display: flex;
+}
+footer nav ul:first-of-type {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+  white-space: nowrap;
+}
+footer nav ul:first-of-type li a img {
+  height: 1.5rem;
+}
+
+/*# sourceMappingURL=footer.css.map */
